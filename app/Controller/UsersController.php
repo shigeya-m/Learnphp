@@ -48,7 +48,7 @@ class UsersController extends TwitterBootstrapController {
   public function index(){
     $this->set('user', $this->Auth->user());
     $this->Session->write('user',$this->Auth->user());
-    return $this->redirect(array('controller' => 'test'));
+    return $this->redirect(array('controller' => 'index'));
   }
 
   public function register(){

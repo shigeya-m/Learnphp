@@ -30,14 +30,7 @@ App::uses('TwitterBootstrapController', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-class TestController extends TwitterBootstrapController {
-	public function beforeFilter()
-	{
-		parent::beforeFilter();
-		if(is_null($this->Session->read('user'))):
-			return $this->redirect(array('controller' => 'users'));
-		endif;
-	}
+class IndexController extends TwitterBootstrapController {
 	public function index() {
 		$this->set('message',$this->Session->read('user')['username']);
 
