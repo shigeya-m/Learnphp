@@ -1,0 +1,189 @@
+2015-11-06 20:14:26 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/login
+Stack Trace:
+#0 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#2 {main}
+2015-11-09 09:31:39 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2015-11-09 09:31:46 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/
+Stack Trace:
+#0 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#2 {main}
+2015-11-09 09:31:51 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2015-11-09 09:32:18 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2015-11-09 09:32:58 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2015-11-09 09:32:59 Error: [MissingActionException] Action UsersController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+)
+Request URL: /index.php/
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2015-11-09 10:08:54 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/user/login
+Stack Trace:
+#0 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#2 {main}
+2015-11-09 10:09:03 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/user/login
+Stack Trace:
+#0 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#2 {main}
+2015-11-09 12:10:06 Error: Fatal Error (1): Class 'TwitterBootstrapController' not found in [C:\xampp\htdocs\app\Controller\UsersController.php, line 32]
+2015-11-09 12:10:06 Error: [FatalErrorException] Class 'TwitterBootstrapController' not found
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'TwitterB...', 'C:\\xampp\\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'TwitterB...', 'C:\\xampp\\htdocs...', 32, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'TwitterB...', 'C:\\xampp\\htdocs...', 32, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-09 12:22:19 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\app\Controller\UsersController.php, line 65]
+2015-11-09 12:22:19 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-09 12:22:26 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\app\Controller\UsersController.php, line 65]
+2015-11-09 12:22:26 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-09 12:22:34 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\app\Controller\UsersController.php, line 65]
+2015-11-09 12:22:34 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-09 12:22:45 Error: [MissingHelperException] Helper class pagenameHelper could not be found.
+Exception Attributes: array (
+  'class' => 'pagenameHelper',
+  'plugin' => false,
+)
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('pagename')
+#1 C:\xampp\htdocs\lib\Cake\View\View.php(858): HelperCollection->__isset('pagename')
+#2 C:\xampp\htdocs\app\View\Users\login.ctp(3): View->__get('pagename')
+#3 C:\xampp\htdocs\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#11 {main}
+2015-11-09 12:25:34 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\app\View\Layouts\default.ctp, line 77]
+2015-11-09 12:25:34 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-09 12:25:51 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\app\View\Layouts\default.ctp, line 77]
+2015-11-09 12:25:51 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-09 13:13:38 Error: Fatal Error (1): Class 'TwitterBootstrapController' not found in [C:\xampp\htdocs\app\Controller\UsersController.php, line 32]
+2015-11-09 13:13:38 Error: [FatalErrorException] Class 'TwitterBootstrapController' not found
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'TwitterB...', 'C:\\xampp\\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'TwitterB...', 'C:\\xampp\\htdocs...', 32, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'TwitterB...', 'C:\\xampp\\htdocs...', 32, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
