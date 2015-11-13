@@ -37,7 +37,6 @@ echo $this->fetch('meta');
 echo $this->fetch('css');
 ?>
 <style type="text/css">
-body { padding-top: 80px; }
 @media ( min-width: 768px ) {
 	#banner {
 		min-height: 300px;

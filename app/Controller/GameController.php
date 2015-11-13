@@ -30,15 +30,11 @@ App::uses('TwitterBootstrapController', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-class IndexController extends TwitterBootstrapController {
+class GameController extends TwitterBootstrapController {
 	public function index() {
 		$this->set('loginstatus',$this->Session->read('user')['username']);
-/*$this->loadModel('User');
-//“o˜^‚·‚é’l
-$data = array('User' => array('name' => 'test', 'status' => 1));
-// “o˜^‚·‚éƒtƒB[ƒ‹ƒh
-$fields = array('name', 'status');
-// V‹K“o˜^
-$this->User->save($data, false, $fields);*/
+	}
+	public function room($id){
+		$this->set('roomname','ルーム：'.$id);
 	}
 }
