@@ -73,12 +73,13 @@ class UsersController extends TwitterBootstrapController {
     }
     $this->set('pagename', "login");
     if($this->request->is('post')) {
-      if($this->Auth->login()){      
-        debug("OK");
-        return $this->redirect('index');
+      if($this->Auth->login()){
+        $this->Session->write('user',$this->Auth->user());
+        return $this->redirect(
+            array('controller' => 'game', 'action' => 'index')
+        );
       }
       else{
-        debug("BAD");
         $this->Flash->set('ログイン失敗');
       }
     }

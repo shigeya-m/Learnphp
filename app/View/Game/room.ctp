@@ -27,7 +27,7 @@
         <div class="input-group">
           <input type="text" class="form-control">
           <span class="input-group-btn">
-            <button class="btn btn-subcolor" type="submit">検索</button>
+            <button class="btn btn-subcolor" type="submit">コメント</button>
           </span>
         </div>
       </div>

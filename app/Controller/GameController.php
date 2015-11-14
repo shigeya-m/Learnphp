@@ -31,10 +31,27 @@ App::uses('TwitterBootstrapController', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class GameController extends TwitterBootstrapController {
+	public $components = array('Flash','Session', 'Auth');
+	public $uses = array('Room');
+
+	public function beforeFilter()
+	{
+		parent::beforeFilter();
+		if(is_null($this->Session->read('user'))){
+			return $this->redirect(array('controller' => 'users', 'action' => 'login'));
+		}
+	}
 	public function index() {
 		$this->set('loginstatus',$this->Session->read('user')['username']);
+		if ($this->request->is('post')) {
+        // フォームのデータを検証して保存する...
+
+			if ($this->Room->save($this->request->data)) {
+				debug($this->request->data);
+			}
+		}
 	}
 	public function room($id){
-		$this->set('roomname','ルーム：'.$id);
+		$this->set('roomname','ルーム：'.$id.' Team:A');
 	}
 }

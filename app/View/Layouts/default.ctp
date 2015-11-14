@@ -14,6 +14,9 @@
 	<?php echo $this->Html->css('bootstrap'); ?>
 	<?php 
 	echo $this->Html->css('bootstrap-responsive.min');
+	echo $this->Html->css('jquery-ui.min');
+	echo $this->Html->css('jquery-ui.structure.min');
+	echo $this->Html->css('jquery-ui.theme.min');
 	echo $this->Html->css('main');
 	echo $this->Html->css('font-awesome.min'); 
 	echo $this->Html->script('chart');
@@ -122,6 +125,7 @@ echo $this->fetch('css');
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<?php 
+	echo $this->Html->script('jquery-ui.min');
 	echo $this->Html->script('bootstrap');
 	?>
 	<?php echo $this->fetch('script'); ?>
