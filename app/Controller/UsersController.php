@@ -76,7 +76,7 @@ class UsersController extends TwitterBootstrapController {
       if($this->Auth->login()){
         $this->Session->write('user',$this->Auth->user());
         return $this->redirect(
-            array('controller' => 'game', 'action' => 'index')
+            array('controller' => 'room', 'action' => 'index')
         );
       }
       else{

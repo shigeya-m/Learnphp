@@ -7723,3 +7723,302 @@ Stack Trace:
 #3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-02-23 12:29:54 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 対象のコンピューターによって拒否されたため、接続できませんでした。
+',
+  'enabled' => true,
+)
+Request URL: /index.php/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp\htdocs\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp\htdocs\lib\Cake\Model\Model.php(3626): ConnectionManager::getDataSource('default')
+#3 C:\xampp\htdocs\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\xampp\htdocs\lib\Cake\Model\Model.php(3653): Model->setSource('users')
+#5 C:\xampp\htdocs\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#6 C:\xampp\htdocs\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 C:\xampp\htdocs\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 C:\xampp\htdocs\app\Plugin\TwitterBootstrap\View\Helper\BootstrapFormHelper.php(160): FormHelper->create('User', Array)
+#9 C:\xampp\htdocs\app\View\Users\login.ctp(5): BootstrapFormHelper->create('User', Array)
+#10 C:\xampp\htdocs\lib\Cake\View\View.php(971): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#14 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#15 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#16 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#18 {main}
+2016-03-30 10:31:05 Error: [MissingControllerException] Controller class RoomController could not be found.
+Exception Attributes: array (
+  'class' => 'RoomController',
+  'plugin' => NULL,
+)
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#2 {main}
+2016-03-30 10:32:03 Error: [MissingViewException] View file "Game\room.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Game\\room.ctp',
+)
+Request URL: /index.php/game/room/0
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#4 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#6 {main}
+2016-03-30 10:33:15 Error: [MissingActionException] Action GameController::0() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '0',
+)
+Request URL: /index.php/game/0
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:34:11 Error: [MissingActionException] Action GameController::0() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '0',
+)
+Request URL: /index.php/game/0
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:34:59 Error: [MissingActionException] Action GameController::0() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '0',
+)
+Request URL: /index.php/game/0
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:35:38 Error: [MissingActionException] Action GameController::0() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '0',
+)
+Request URL: /index.php/game/0
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:37:41 Error: [MissingActionException] Action GameController::0() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '0',
+)
+Request URL: /index.php/game/0
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:39:06 Error: [MissingActionException] Action GameController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '1',
+)
+Request URL: /index.php/game/1
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:43:09 Error: [MissingActionException] Action GameController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '1',
+)
+Request URL: /index.php/game/1
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:44:00 Error: [MissingActionException] Action GameController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '1',
+)
+Request URL: /index.php/game/1
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-30 10:44:29 Error: [MissingActionException] Action GameController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'GameController',
+  'action' => '1',
+)
+Request URL: /index.php/game/1
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(GameController), Object(CakeRequest))
+#2 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#4 {main}
+2016-03-31 18:32:42 Error: [PDOException] SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(1118): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 C:\xampp\htdocs\lib\Cake\Model\Model.php(3031): DboSource->read(Object(Room), Array)
+#5 C:\xampp\htdocs\lib\Cake\Model\Model.php(3003): Model->_readDataSource('count', Array)
+#6 C:\xampp\htdocs\lib\Cake\Model\Model.php(3436): Model->find('count', Array)
+#7 [internal function]: Model->isUnique(Array, Array)
+#8 C:\xampp\htdocs\lib\Cake\Model\Validator\CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\lib\Cake\Model\Validator\CakeValidationSet.php(135): CakeValidationRule->process('roomname', Array, Array)
+#10 C:\xampp\htdocs\lib\Cake\Model\ModelValidator.php(268): CakeValidationSet->validate(Array, false)
+#11 C:\xampp\htdocs\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 C:\xampp\htdocs\lib\Cake\Model\Model.php(3469): ModelValidator->validates(Array)
+#13 C:\xampp\htdocs\lib\Cake\Model\Model.php(1829): Model->validates(Array)
+#14 C:\xampp\htdocs\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#15 C:\xampp\htdocs\app\Controller\RoomController.php(47): Model->save(Array)
+#16 [internal function]: RoomController->index()
+#17 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#18 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#19 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest))
+#20 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#21 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#22 {main}
+2016-03-31 19:39:08 Error: Fatal Error (1): Call to a member function validates() on null in [C:\xampp\htdocs\app\Controller\RoomController.php, line 55]
+2016-03-31 19:39:08 Error: [FatalErrorException] Call to a member function validates() on null
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 55, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 55, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 19:39:21 Error: Fatal Error (1): Call to a member function validate() on null in [C:\xampp\htdocs\app\Controller\RoomController.php, line 55]
+2016-03-31 19:39:21 Error: [FatalErrorException] Call to a member function validate() on null
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 55, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 55, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 19:39:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'validate' at line 1
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('validate', Array)
+#2 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('validate', Array, Array)
+#3 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('validate', Array, Array)
+#4 C:\xampp\htdocs\lib\Cake\Model\Model.php(827): DboSource->query('validate', Array, Object(Room))
+#5 C:\xampp\htdocs\app\Controller\RoomController.php(55): Model->__call('validate', Array)
+#6 C:\xampp\htdocs\app\Controller\RoomController.php(55): Room->validate()
+#7 [internal function]: RoomController->index()
+#8 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest))
+#11 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#13 {main}
+2016-03-31 19:41:13 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [C:\xampp\htdocs\app\Controller\RoomController.php, line 56]
+2016-03-31 19:41:13 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 56, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 56, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 19:46:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'validate' at line 1
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(461): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(427): DboSource->_execute('validate', Array)
+#2 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('validate', Array, Array)
+#3 C:\xampp\htdocs\lib\Cake\Model\Datasource\DboSource.php(612): DboSource->fetchAll('validate', Array, Array)
+#4 C:\xampp\htdocs\lib\Cake\Model\Model.php(827): DboSource->query('validate', Array, Object(Room))
+#5 C:\xampp\htdocs\app\Controller\RoomController.php(54): Model->__call('validate', Array)
+#6 C:\xampp\htdocs\app\Controller\RoomController.php(54): Room->validate(Array)
+#7 [internal function]: RoomController->index()
+#8 C:\xampp\htdocs\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RoomController), Array)
+#9 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RoomController), Object(CakeRequest))
+#11 C:\xampp\htdocs\app\webroot\index.php(115): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\index.php(41): require('C:\\xampp\\htdocs...')
+#13 {main}
+2016-03-31 20:45:11 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [C:\xampp\htdocs\app\View\Room\index.ctp, line 13]
+2016-03-31 20:45:11 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 20:46:35 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH) in [C:\xampp\htdocs\app\View\Room\index.ctp, line 13]
+2016-03-31 20:46:35 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH)
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 22:56:10 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting ')' in [C:\xampp\htdocs\app\View\Room\index.ctp, line 61]
+2016-03-31 22:56:11 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting ')'
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 22:56:50 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting ')' in [C:\xampp\htdocs\app\View\Room\index.ctp, line 61]
+2016-03-31 22:56:50 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting ')'
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-03-31 22:58:07 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE), expecting ')' in [C:\xampp\htdocs\app\View\Room\index.ctp, line 61]
+2016-03-31 22:58:07 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE), expecting ')'
+Request URL: /index.php/room
+Stack Trace:
+#0 C:\xampp\htdocs\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61, Array)
+#2 C:\xampp\htdocs\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 61, Array)
+#3 C:\xampp\htdocs\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

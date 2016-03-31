@@ -49,18 +49,23 @@ class Room extends AppModel {
     'password' => array(
       array(
         'rule' => 'alphaNumeric',
+        'required' => false,
+        'allowEmpty' => true,
         'message' => 'パスワードは半角英数字にしてください。'
       ),
       array(
         'rule' => array('between', 8, 32),
+        'required' => false,
+        'allowEmpty' => true,
         'message' => 'パスワードは8文字以上32文字以内にしてください。'
       )
     )
   );
 
-  // public function beforeSave($options = array()) {
-  //   $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
-  //   return true;
-  // }
+  public function beforeSave($options = array()) {
+    //ハッシュ値を生成しルームidとして設定
+  	$this->data['Room']['roomid'] = uniqid(rand());
+  	return true;
+  }
 
 }

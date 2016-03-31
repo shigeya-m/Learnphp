@@ -2,77 +2,51 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 subtitle">
-        <h2>ルームを選択してください</h2>
+        <h2><?php echo $roomname ?></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 subtitle">
+        <canvas id="tutorial" width="400" height="300"></canvas>
+      </div>
+      <div class="col-xs-6 subtitle">
         <?php
         $header_list = '<thead>'.$this->Html->tableHeaders(array(
-          'ルーム名',
-          '参加人数'
+          'ユーザ名',
+          'コメント'
           ),array('class' => ''),array('class'=>'text-center')).'</thead>';
         $cells_list = $this->Html->tableCells(
           array(
             array('Red', '30'),
-            array(array('Orange',array('class' => 'haspass')) ,array('10',array('class' => 'haspass'))),
+            array('Orange', '10'),
             array('Yellow', '5'),
             )
           );
         echo $this->Html->tag('table',$header_list.$cells_list,array('class' => 'table table-striped table-bordered table-hover', 'id'=>'room_table'));
         ?>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 subtitle">
-        <?php
-        print($this->Html->tag('a','新規ルーム作成', array('class'=>'btn btn-lg btn-subcolor','onClick'=>'open_newroom_dialog();')));
-        ?>
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-subcolor" type="submit">コメント</button>
+          </span>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<div id="newroom_dialog">
-  <?php 
-  print(
-    $this->Form->create('Room',array('class' => 'form-horizontal')) .
-    $this->Form->input('roomname') .
-    $this->Form->input('password') .
-    $this->Form->submit('Submit')
-    ); ?>
-  </div>
-  <div id="password_dialog">
-    <?php 
-    print(
-      $this->Form->create('Room',array('class' => 'form-horizontal')) .
-      $this->Form->input('password') .
-      $this->Form->submit('Submit')
-      ); ?>
-    </div>
-
-    <?php $this->Html->scriptStart(array('inline' => false)); ?>
-    $('#room_table td').click(function(){
-    //縦
-    var row = $(this).closest('tr').index();
-    //横
-    var col = this.cellIndex;
-    console.log('Row: ' + row + ', Column: ' + col);
-    if($(this).hasClass('haspass')){
-    $('#password_dialog').dialog('open');
-  }
-  else{
-  document.location.href = "http://localhost/index.php/game/room/"+row;
-}
+<?php $this->Html->scriptStart(array('inline' => false)); ?>
+    function draw(){
+        var canvas = document.getElementById('tutorial');
+        if (canvas.getContext){
+            var ctx = canvas.getContext('2d');
+            ctx.fillRect(50,50,300,200);
+            ctx.clearRect(120,80,200,140);
+            ctx.strokeRect(200,20,180,260);
+            ctx.font = "bold 22px 'ＭＳ Ｐゴシック'";
+            ctx.fillText('ゲーム画面',0,30);
+        }
+    }
+    $(document).ready(function(){
+  draw();
 });
-$('#newroom_dialog').dialog({
-autoOpen: false,
-title: '新規ルーム作成',
-closeOnEscape: false,
-modal: true,
-});
-$('#password_dialog').dialog({
-autoOpen: false,
-title: 'パスワード入力',
-closeOnEscape: false,
-modal: true,
-});
-function open_newroom_dialog(){
-$('#newroom_dialog').dialog('open');
-}
-<?php $this->Html->scriptEnd(); ?>
+      <?php $this->Html->scriptEnd(); ?>

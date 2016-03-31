@@ -1,4 +1,5 @@
-﻿<h1>登録</h1>
+﻿<div class="container">
+<h1>登録</h1>
 <?php 
 print(
   $this->Form->create('User') .
@@ -6,3 +7,4 @@ print(
   $this->Form->input('password') .
   $this->Form->end('Submit')
 ); ?>
+</div>

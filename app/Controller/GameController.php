@@ -32,7 +32,6 @@ App::uses('TwitterBootstrapController', 'Controller');
  */
 class GameController extends TwitterBootstrapController {
 	public $components = array('Flash','Session', 'Auth');
-	public $uses = array('Room');
 
 	public function beforeFilter()
 	{
@@ -43,15 +42,14 @@ class GameController extends TwitterBootstrapController {
 	}
 	public function index() {
 		$this->set('loginstatus',$this->Session->read('user')['username']);
-		if ($this->request->is('post')) {
+/*		if ($this->request->is('post')) {
         // フォームのデータを検証して保存する...
 
 			if ($this->Room->save($this->request->data)) {
 				debug($this->request->data);
 			}
-		}
-	}
-	public function room($id){
+		}*/
+		$id = $this->params['named']['roomname'];
 		$this->set('roomname','ルーム：'.$id.' Team:A');
 	}
 }

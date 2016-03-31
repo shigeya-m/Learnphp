@@ -45,7 +45,7 @@
           if(is_null($loginstatus)):
             print($this->Html->link('早速プレイ!', array('controller'=>'users','action'=>'login'), array('class'=>'btn btn-lg btn-subcolor')));
           else:
-            print($this->Html->link('早速プレイ!', array('controller'=>'game','action'=>'index'), array('class'=>'btn btn-lg btn-subcolor')));
+            print($this->Html->link('早速プレイ!', array('controller'=>'room','action'=>'index'), array('class'=>'btn btn-lg btn-subcolor')));
           endif;
           ?>
         </p>
